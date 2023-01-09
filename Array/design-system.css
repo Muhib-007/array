@@ -1,0 +1,277 @@
+
+:root{
+    /* primary color */
+    --blue:#2E3092;
+    --orange:#F26C21;
+    /* text color  */
+    --deep-blue:#1C1D58;
+    --light-blue:#5859A8;
+    --green:#4B813B;
+    --white:#FFFFFF;
+    --gray:#666666;
+    
+    /* background-color  */
+    --white:#FFFFFF;
+    --light-white:#F4F7FC;
+    --light-white2:#F9F9F9;
+    /* shapes color  */
+    --deep-orange:rgba(242, 108, 33, 0.55);
+    --light-orange:#FCE2D3;
+    /* --Provincial-pink:#FCE2D3; */
+    --deep-blue2:rgba(46, 48, 146, 0.55);
+    --mid-gray:#E8E9FF;
+    --deep-green:rgba(75, 129, 59, 0.55);
+    --light-green:#6E9363;
+
+    /* icon color  */
+    
+    --orange:#F26C21;
+    --light-orange2:#FCE2D3;
+    --icon-green:#6FA55F;
+
+    /* button color  */
+    --orange:#F26C21;
+    --white:#FFFFFF;
+
+    --h1:52px;
+    --h2:36px;
+    --h3:32px;
+    --h4:24px;
+    --h5:22px;
+    --h6:20px;
+
+    --text-md:18px;
+    --text-sm:16px;
+
+}
+.vh{
+    min-height: 5vw;
+}
+.primary-color{
+    color: var(--orange);
+}
+.secondary-color{
+    color: var(--blue);
+}
+.tertiary-color{
+    color: var(--white);
+}
+
+/* text color  */
+.txt-deep-blue{
+    color: var(--deep-blue)
+};
+.txt-light-blue{
+    color: var(--light-blue);
+}
+.txt-green{
+    color: var(--green);
+}
+.txt-white{
+    color: var(--white);
+}
+.txt-gray{
+    color: var(--gray);
+}
+
+/* background color  */
+
+.bg-white{
+    background-color: var(--white);
+}
+.bg-blue{
+    background-color: var(--blue);
+}
+.bg-light-white{
+    background-color: var(--light-white);
+}
+.bg-light-white2{
+    background-color: var(--light-white2);
+}
+.bg-deep-orange{
+    background-color: var(--deep-orange);
+}
+
+/* shape color  */
+
+.shape-primary{
+    color: var(--deep-orange);
+}
+.shape-secondary{
+    color: var(--light-orange);
+}
+.shape-deep-blue2{
+    color: var(--deep-blue);
+}
+.shape-mid-gray{
+    color: var(--mid-gray);
+}
+.shape-deep-green{
+    color: var(--deep-green);
+}
+.shape-light-green{
+    color: var(--light-green);
+}
+
+/* icon color  */
+
+.icon-orange{
+    color: var(--orange);
+}
+.icon-light-orange2{
+    color: var(--light-orange2);
+}
+.icon-green{
+    color: var(--icon-green);
+}
+
+/* button color  */
+
+.primary-btn{
+    background-color: var(--orange);
+    color: var(--white);
+}
+.secondary-btn{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.font-w600{
+    font-weight: 600;
+}
+.font-w500{
+    font-weight: 500;
+}
+.font-w400{
+    font-weight: 400;
+}
+.font-w300{
+    font-weight: 300;
+}
+/* font size font size font size  */
+.m-bottom{
+    margin-bottom: 100px ;
+}
+.m-top{
+    margin-top: 100px ;
+}
+h1{
+    font-size: var(--h1);
+}
+h2{
+    font-size: var(--h2);
+}
+h3{
+    font-size: var(--h3);
+}
+h4{
+    font-size: var(--h4);
+}
+h5{
+    font-size: var(--h5);
+}
+h6{
+    font-size: var(--h6);
+}
+.txt-md{
+    font-size: var(--text-md);
+}
+.txt-sm{
+    font-size: var(--text-sm);
+}
+
+ul, li, a{
+    text-decoration: none;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+nav a{
+    color: var(--deep-blue);
+    font-size: var(--text-md);
+    margin-right: 32px;
+    font-weight: 500;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: var(--bg-light-white);
+  }
+
+
+button{
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: var(--deep-orange);
+    color: var(--orange);
+    transition: 600ms ;
+}
+button:hover{
+    background-color: var(--deep-orange);
+    color: var(--orange);
+}
+button .txt-md img:hover{
+    color: var(--orange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.big-shape{
+    max-width: 836px;
+    height: 770px;
+}
+.big-shape img{
+    width: 100%;
+}
+
+
+
+
+/* @media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px;
+        }
+} */
+@media (max-width: 1920px){
+    
+    .container{
+        margin: auto;
+        max-width: 1170px;
+    }
+}
+/* @media (max-width: 1920px){
+    
+    body{
+        width: 1920px;
+    }
+} */
