@@ -8,22 +8,101 @@ body{
 }
 
 
-.bg-dark{
+/* .bg-dark{
     height: 400px;
     width: 400px;
 
+} */
+.image{
+    width: 100%;
 }
-
-.service{
+.service-box{
     max-width: 370px;
     max-height: 358px;
     width: 100%;
     padding:0px 35px 30px 23px;
     border-radius: 5px;
 }
-.service .inner-content img{
+.service-box .inner-content img{
     margin-top: -68px;
 }
-.service .inner-content h4{
+.service-box .inner-content h4{
     margin: 32px 0;
+}
+
+/* brand css starts here  */
+
+.brand .br-names{
+    margin: 85px 0;
+}
+
+
+/* service css  */
+.service{
+    padding-bottom: 9px;
+}
+.service .container{
+    padding: 67px 0;
+}
+.service .container .service-box{
+    margin: 64px auto;
+}
+
+/* why us section css  */
+
+.box-padding{
+    padding: 24px 24px 0 24px;
+    position: relative;
+
+}
+.mx-32{
+    margin: 32px auto;
+}
+.container .box-content .box-bg{
+    box-sizing: border-box;
+    /* position: absolute; */
+    width: 269px;
+    height: 265.5px;
+
+    /* Background Colors/BG-blusih(200) */
+    border-radius: 5px;
+}
+.container .box-content .box-bg .img-1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.container .box-content .box-bg .img-2{
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
+
+/* counter css  */
+.counter .counter-1{
+    margin: 151px 0;
+}
+
+
+
+/* <!-- project-value  -->  */
+
+.my-66px{
+    margin: 66px 0;
+}
+.project .box-content{
+    /* min-height: 429px; */
+    min-width: 370px;
+    width: 100%;
+}
+
+.projects .box-content 
+
+.border-bottom{
+    border-bottom: none;
+}
+.nav-link:hover{
+    border: none;
+    color: var(--orange);
+    border-bottom: 2px solid orange;
 }

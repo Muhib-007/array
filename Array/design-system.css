@@ -3,6 +3,7 @@
     /* primary color */
     --blue:#2E3092;
     --orange:#F26C21;
+
     /* text color  */
     --deep-blue:#1C1D58;
     --light-blue:#5859A8;
@@ -14,6 +15,7 @@
     --white:#FFFFFF;
     --light-white:#F4F7FC;
     --light-white2:#F9F9F9;
+    --bg-ash:#A1A1A1;
     /* shapes color  */
     --deep-orange:rgba(242, 108, 33, 0.55);
     --light-orange:#FCE2D3;
@@ -26,7 +28,7 @@
     /* icon color  */
     
     --orange:#F26C21;
-    --light-orange2:#FCE2D3;
+    --light-orange:#FCE2D3;
     --icon-green:#6FA55F;
 
     /* button color  */
@@ -43,10 +45,24 @@
     --text-md:18px;
     --text-sm:16px;
 
+    --letter-spacing1:1px;
+    --letter-spacing2:2px;
+
+}
+
+.ls-1px{
+    letter-spacing: var(--letter-spacing);
 }
 .vh{
     min-height: 5vw;
 }
+.padding-y{
+    padding: 100px 0;
+}
+.mt-91px{
+    margin-top: 91px;
+}
+
 .primary-color{
     color: var(--orange);
 }
@@ -59,8 +75,8 @@
 
 /* text color  */
 .txt-deep-blue{
-    color: var(--deep-blue)
-};
+    color: var(--deep-blue);
+}
 .txt-light-blue{
     color: var(--light-blue);
 }
@@ -72,6 +88,9 @@
 }
 .txt-gray{
     color: var(--gray);
+}
+.txt-orange{
+    color: var(--orange);
 }
 
 /* background color  */
@@ -90,6 +109,9 @@
 }
 .bg-deep-orange{
     background-color: var(--deep-orange);
+}
+.bg-ash{
+    background-color: var(--bg-ash);
 }
 
 /* shape color  */
@@ -118,8 +140,8 @@
 .icon-orange{
     color: var(--orange);
 }
-.icon-light-orange2{
-    color: var(--light-orange2);
+.icon-light-orange{
+    background-color: var(--light-orange);
 }
 .icon-green{
     color: var(--icon-green);
@@ -157,6 +179,7 @@
 }
 h1{
     font-size: var(--h1);
+    font-weight: 600;
 }
 h2{
     font-size: var(--h2);
@@ -173,11 +196,17 @@ h5{
 h6{
     font-size: var(--h6);
 }
+.h6{
+    font-size: var(--h6);
+}
 .txt-md{
     font-size: var(--text-md);
+    line-height: 30px;
+    letter-spacing: 2px;
 }
 .txt-sm{
     font-size: var(--text-sm);
+    line-height: 28px;
 }
 
 ul, li, a{
@@ -224,7 +253,7 @@ button{
 button:hover{
     background-color: var(--deep-orange);
     color: var(--orange);
-    transition: 600ms ;
+    transition: 600ms;
 }
 button:hover{
     background-color: var(--deep-orange);
