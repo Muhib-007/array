@@ -1,22 +1,20 @@
 
 :root{
     /* primary color */
+    --primary:#2E3092;
+    --secondary:#F26C21;
+    --tertiary:#4B813B;
+
     --blue:#2E3092;
     --orange:#F26C21;
-
-    /* text color  */
+    --green:#4B813B;
     --deep-blue:#1C1D58;
     --light-blue:#5859A8;
-    --green:#4B813B;
     --white:#FFFFFF;
     --gray:#666666;
-    
-    /* background-color  */
-    --white:#FFFFFF;
     --light-white:#F4F7FC;
     --light-white2:#F9F9F9;
     --bg-ash:#A1A1A1;
-    /* shapes color  */
     --deep-orange:rgba(242, 108, 33, 0.55);
     --light-orange:#FCE2D3;
     /* --Provincial-pink:#FCE2D3; */
@@ -24,26 +22,17 @@
     --mid-gray:#E8E9FF;
     --deep-green:rgba(75, 129, 59, 0.55);
     --light-green:#6E9363;
-
-    /* icon color  */
-    
-    --orange:#F26C21;
-    --light-orange:#FCE2D3;
     --icon-green:#6FA55F;
 
-    /* button color  */
-    --orange:#F26C21;
-    --white:#FFFFFF;
+    --h1:3.25rem;
+    --h2:2.25rem;
+    --h3:2rem;
+    --h4:1.5rem;
+    --h5:1.375rem;
+    --h6:1.25rem;
 
-    --h1:52px;
-    --h2:36px;
-    --h3:32px;
-    --h4:24px;
-    --h5:22px;
-    --h6:20px;
-
-    --text-md:18px;
-    --text-sm:16px;
+    --text-md:1.125rem;
+    --text-sm:1rem;
 
     --letter-spacing1:1px;
     --letter-spacing2:2px;
@@ -59,20 +48,15 @@
 .padding-y{
     padding: 100px 0;
 }
-.mt-91px{
-    margin-top: 91px;
+.primary{
+    color: var(--primary);
 }
-
-.primary-color{
-    color: var(--orange);
+.secondary{
+    color: var(--secondary);
 }
-.secondary-color{
-    color: var(--blue);
+.tertiary{
+    color: var(--tertiary);
 }
-.tertiary-color{
-    color: var(--white);
-}
-
 /* text color  */
 .txt-deep-blue{
     color: var(--deep-blue);
@@ -81,7 +65,7 @@
     color: var(--light-blue);
 }
 .txt-green{
-    color: var(--green);
+    color: var(--tertiary);
 }
 .txt-white{
     color: var(--white);
@@ -90,7 +74,10 @@
     color: var(--gray);
 }
 .txt-orange{
-    color: var(--orange);
+    color: var(--secondary);
+}
+.txt-light-orange{
+    color: var(--light-orange);
 }
 
 /* background color  */
@@ -99,7 +86,10 @@
     background-color: var(--white);
 }
 .bg-blue{
-    background-color: var(--blue);
+    background-color: var(--primary);
+}
+.bg-deep-blue{
+    background-color: var(--deep-blue);
 }
 .bg-light-white{
     background-color: var(--light-white);
@@ -117,7 +107,7 @@
 /* shape color  */
 
 .shape-primary{
-    color: var(--deep-orange);
+    color: var(--secondary);
 }
 .shape-secondary{
     color: var(--light-orange);
@@ -138,7 +128,7 @@
 /* icon color  */
 
 .icon-orange{
-    color: var(--orange);
+    color: var(--secondary);
 }
 .icon-light-orange{
     background-color: var(--light-orange);
@@ -150,14 +140,13 @@
 /* button color  */
 
 .primary-btn{
-    background-color: var(--orange);
+    background-color: var(--secondary);
     color: var(--white);
 }
 .secondary-btn{
     background-color: var(--white);
-    color: var(--orange);
+    color: var(--secondary);
 }
-
 .font-w600{
     font-weight: 600;
 }
@@ -181,20 +170,43 @@ h1{
     font-size: var(--h1);
     font-weight: 600;
 }
+.h1{
+    font-size: var(--h1);
+    font-weight: 600;
+}
 h2{
     font-size: var(--h2);
+    font-weight: 600;
+}
+.h2{
+    font-size: var(--h2);
+    font-weight: 600;
 }
 h3{
     font-size: var(--h3);
+    font-weight: 600;
+}
+.h3{
+    font-size: var(--h3);
+    font-weight: 600;
 }
 h4{
     font-size: var(--h4);
+    font-weight: 600;
 }
+.h4{
+    font-size: var(--h4);
+    font-weight: 600;
+}
+h5{
+    font-size: var(--h5);
+.}
 h5{
     font-size: var(--h5);
 }
 h6{
     font-size: var(--h6);
+    font-weight: 600;
 }
 .h6{
     font-size: var(--h6);
@@ -202,13 +214,12 @@ h6{
 .txt-md{
     font-size: var(--text-md);
     line-height: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .txt-sm{
     font-size: var(--text-sm);
     line-height: 28px;
 }
-
 ul, li, a{
     text-decoration: none;
     margin: 0;
@@ -222,27 +233,23 @@ nav a{
     margin-right: 32px;
     font-weight: 500;
 }
-html {
-    font-family: sans-serif;
+html{
+    font-family: 'Poppins', sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-
-
-  body {
+}
+body{
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
     text-align: left;
     background-color: var(--bg-light-white);
-  }
+}
 
 
 button{
@@ -252,26 +259,16 @@ button{
 }
 button:hover{
     background-color: var(--deep-orange);
-    color: var(--orange);
+    color: var(--secondary);
     transition: 600ms;
 }
 button:hover{
     background-color: var(--deep-orange);
-    color: var(--orange);
+    color: var(--secondary);
 }
 button .txt-md img:hover{
-    color: var(--orange);
+    color: var(--secondary);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -285,6 +282,48 @@ button .txt-md img:hover{
 
 
 
+/* why us  */
+
+.box-padding{
+    padding: 24px 24px 0 24px;
+    position: relative;
+
+}
+
+
+
+/* contact us  */
+.contact-us .input-box {
+    max-width: 470px;
+    z-index: 9;
+}
+.contact-us .msg-box {
+    padding: 40px;
+    width: 100%;
+}
+.msg-box .message {
+    padding-bottom: 103px;
+}
+.msg-box input{
+    background: var(--blue);
+    color: var(--white);
+    margin: 16px 0;
+    border: none;
+    padding: 10px 4px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+.msg-box input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--white);
+    opacity: 1; /* Firefox */
+  }
+.map{
+    margin-top: -65px;
+}
+
+
+
+
 
 /* @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -292,15 +331,13 @@ button .txt-md img:hover{
         }
 } */
 @media (max-width: 1920px){
-    
     .container{
         margin: auto;
         max-width: 1170px;
     }
 }
-/* @media (max-width: 1920px){
-    
-    body{
-        width: 1920px;
+@media (max-width: 768px){
+    .contact-us .input-box{
+        justify-content: center;
     }
-} */
+}

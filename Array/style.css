@@ -15,6 +15,7 @@ body{
 } */
 .image{
     width: 100%;
+    background: cover;
 }
 .service-box{
     max-width: 370px;
@@ -50,22 +51,24 @@ body{
 
 /* why us section css  */
 
-.box-padding{
-    padding: 24px 24px 0 24px;
-    position: relative;
+.why-us .container .image .image-left{
+    max-width: 470px;
+    width: 100%;
 
 }
-.mx-32{
-    margin: 32px auto;
+.mt-91px{
+    margin-top: 91px;
 }
 .container .box-content .box-bg{
     box-sizing: border-box;
     /* position: absolute; */
-    width: 269px;
     height: 265.5px;
 
     /* Background Colors/BG-blusih(200) */
     border-radius: 5px;
+}
+.container .box-content .box-bg image{
+    display: block;
 }
 .container .box-content .box-bg .img-1{
     position: absolute;
@@ -77,6 +80,14 @@ body{
     bottom: 24px;
     right: 24px;
 }
+
+
+
+
+
+
+
+
 
 /* counter css  */
 .counter .counter-1{
@@ -106,3 +117,13 @@ body{
     color: var(--orange);
     border-bottom: 2px solid orange;
 }
+
+/* testimonial css  */
+
+.my-60px{
+    margin: 60px 0;
+}
+
+
+
+/* footer  */
