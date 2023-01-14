@@ -24,7 +24,8 @@
     --light-green:#6E9363;
     --icon-green:#6FA55F;
 
-    --h1:3.25rem;
+    --h1:min(max(2rem, 5vw), 3.25rem);
+    --font-size: min(max(2rem, 5vw), 3.25rem);
     --h2:2.25rem;
     --h3:2rem;
     --h4:1.5rem;
@@ -166,6 +167,8 @@
 .m-top{
     margin-top: 100px ;
 }
+
+
 h1{
     font-size: var(--h1);
     font-weight: 600;
@@ -174,6 +177,7 @@ h1{
     font-size: var(--h1);
     font-weight: 600;
 }
+
 h2{
     font-size: var(--h2);
     font-weight: 600;
@@ -274,7 +278,6 @@ button .txt-md img:hover{
 
 .big-shape{
     max-width: 836px;
-    height: 770px;
 }
 .big-shape img{
     width: 100%;
