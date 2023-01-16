@@ -26,8 +26,10 @@
 
     --h1:min(max(2rem, 5vw), 3.25rem);;
     --font-size: min(max(2rem, 5vw), 3.25rem);
-    --h2:2.25rem;
-    --h3:2rem;
+    /* --h2:2.25rem; */
+    --h2:min(max(1.75rem, 4vw), 2.25rem);
+    --h3:min(max(1.5rem, 3vw), 2rem);
+    /* --font-size: min(max(1.5rem, 4vw), 2rem); */
     --h4:1.5rem;
     --h5:1.375rem;
     --h6:1.25rem;
@@ -276,7 +278,7 @@ button .txt-md img:hover{
 
 
 .big-shape{
-    max-width: 836px;
+    max-width: 736px;
 }
 .big-shape img{
     width: 100%;
@@ -324,9 +326,6 @@ button .txt-md img:hover{
 }
 
 
-
-
-
 /* @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1170px;
@@ -338,7 +337,12 @@ button .txt-md img:hover{
         max-width: 1170px;
     }
 }
-@media (max-width: 768px){
+@media (max-width:991px){
+    .counter h3{
+        font-size: ;
+    }
+}
+@media (max-width: 767px){
     .contact-us .input-box{
         justify-content: center;
     }
@@ -347,5 +351,13 @@ button .txt-md img:hover{
     }
     .padding-y{
         padding: 50px 0;
+    }
+    .counter.py-3{
+        padding: 0;
+    }
+    .counter .counter-1 {
+        margin: 0;
+        padding: 34px 0;
+        border-bottom: 2px solid lightgray;
     }
 }

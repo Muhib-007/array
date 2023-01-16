@@ -23,7 +23,7 @@ body{
     top: 13%;
 }
 .shape-line{
-    max-width: 209px;
+    max-width: 231px;
     width: 100%;
 }
 
@@ -37,7 +37,7 @@ body{
     bottom: -22px;
 }
 .why-us-shape{
-    bottom: -27px;
+    bottom: -24px;
     right: 12px;
 }
 .shape-choose {
@@ -64,7 +64,30 @@ body{
 .shape-testimonial-lt{
     top: -50;
     left: -300px;
-
+}
+.shape-testimonial-bt{
+    bottom: 0;
+    left: -200px;
+}
+/* .shape-testimonial-right{
+    bottom: -100px;
+    right: -200px;
+} */
+.shape-footer{
+    left: -15vw;
+    top: 1vw;
+}
+.shape-footer-r{
+    right: -15vw;
+    bottom: -2vw;
+}
+.shape-contact{
+    bottom: 27%;
+    left: -28%;
+    max-width: 6vw;
+}
+.shape-contact{
+    max-width: 29vw;
 }
 .shape-product {
     bottom: -27px;
@@ -238,15 +261,19 @@ width: 250px;
     width: 100%;
 }
 
-.projects .box-content 
-
+/* .projects .box-content  */
+.projects .one{
+    padding: 0 3px;
+    gap: 6px;
+    line-height: 17px;
+}
 .border-bottom{
     border-bottom: none;
 }
 .nav-link:hover{
     border: none;
     color: var(--orange);
-    border-bottom: 2px solid orange;
+    /* border-bottom: 1px solid orange; */
 }
 
 /* testimonial css  */
@@ -280,7 +307,7 @@ width: 250px;
 
     }
 }
-@media (max-width:968px){
+@media (max-width:991px){
     .testimonial .title{
         max-width: 450px;
     }
@@ -288,6 +315,9 @@ width: 250px;
 @media (max-width:767px){
     .hero-heading h1 {
         font-size: min(max(2rem, 7vw), 3rem);
+    }
+    .hero-heading h3 {
+        font-size: min(max(1.5rem, 5vw), 2rem);
     }
     .counter .counter-1{
         margin: 50px 0;
