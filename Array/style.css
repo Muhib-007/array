@@ -12,6 +12,9 @@ body{
 
 } */
 
+section {
+    overflow-x: hidden;
+}
 /* shapes  */
 .shapes-hero-one {
     position: absolute;
@@ -55,15 +58,15 @@ body{
 }
 .shape-why-us {
     bottom: 0;
-    right: -300px;
+    transform: translateX(300px);
 }
 .shape-project{
     top: 0;
-    left: -250px;
+    transform: translateX(-250px);
 }
 .shape-testimonial-lt{
     top: -50;
-    left: -300px;
+    transform: translateX(-300px);
 }
 .shape-testimonial-bt{
     bottom: 0;
@@ -203,7 +206,8 @@ width: 250px;
     padding-bottom: 9px;
 }
 .service .container{
-    padding: 67px 0;
+    padding-top: 67px;
+    padding-bottom: 67px;
 }
 .service .container .service-box{
     margin: 64px auto;
@@ -284,11 +288,26 @@ width: 250px;
 
 .animateToLeft {
 
-  animation: slideToLeft 5s infinite;
-  animation-timing-function: linear;
+    animation: slideToLeft 5s infinite;
+    animation-timing-function: linear;
     width: 200% !important;
     max-width: 200%;
 }
+    /* testtimonial carousel  */
+.owl-carousel{
+    display: flex;
+}
+/* .owl-carousel .owl-dots.disabled{
+    display: block;
+    color: var(--orange);
+} */
+.owl-carousel .owl-item img{
+    width: auto;
+}
+
+.no-outline:focus {
+    outline: none;
+  }
 
 /* animation */
 
@@ -298,6 +317,18 @@ width: 250px;
     99.1%   {transform: translate( 0%, 0px);}
   }
 
+
+
+
+.home-demo .item {
+    background: #ff3f4d;
+}
+.home-demo h2 {
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    font-weight: 300;
+}
 
 /* footer  */
 
