@@ -15,6 +15,8 @@ body{
 section {
     overflow-x: hidden;
 }
+
+
 /* shapes  */
 .shapes-hero-one {
     position: absolute;
@@ -102,6 +104,7 @@ section {
     left: 0;
     width: 100%;
 }
+
 .image{
     width: 100%;
     background: cover;
@@ -332,25 +335,3 @@ width: 250px;
 
 /* footer  */
 
-@media (max-width:1098px){
-    .hero-heading h1{
-        font-size: min(max(2rem, 4vw), 3rem);;
-
-    }
-}
-@media (max-width:991px){
-    .testimonial .title{
-        max-width: 450px;
-    }
-}
-@media (max-width:767px){
-    .hero-heading h1 {
-        font-size: min(max(2rem, 7vw), 3rem);
-    }
-    .hero-heading h3 {
-        font-size: min(max(1.5rem, 5vw), 2rem);
-    }
-    .counter .counter-1{
-        margin: 50px 0;
-    }
-}

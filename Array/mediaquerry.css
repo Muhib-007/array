@@ -1,0 +1,49 @@
+@media (max-width: 1920px){
+    .container{
+        margin: auto;
+        max-width: 1200px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width:1098px){
+    .hero-heading h1{
+        font-size: min(max(2rem, 4vw), 3rem);;
+
+    }
+}
+@media (max-width:991px){
+    .counter h3{
+        font-size:  ;
+    }
+    .testimonial .title{
+        max-width: 450px;
+    }
+}
+@media (max-width: 767px){
+    .hero-heading h1 {
+        font-size: min(max(2rem, 7vw), 3rem);
+    }
+    .hero-heading h3 {
+        font-size: min(max(1.5rem, 5vw), 2rem);
+    }
+    .counter .counter-1{
+        margin: 50px 0;
+    }
+    .contact-us .input-box{
+        justify-content: center;
+    }
+    .m-top{
+        margin-top:50px;
+    }
+    .padding-y{
+        padding: 50px 0;
+    }
+    .counter.py-3{
+        padding: 0;
+    }
+    .counter .counter-1 {
+        margin: 0;
+        padding: 34px 0;
+    }
+}

@@ -205,8 +205,8 @@ h4{
 }
 h5{
     font-size: var(--h5);
-.}
-h5{
+}
+.h5{
     font-size: var(--h5);
 }
 h6{
@@ -232,7 +232,7 @@ ul, li, a{
 li{
     list-style-type: none;
 }
-nav a{
+nav,a{
     color: var(--deep-blue);
     font-size: var(--text-md);
     margin-right: 32px;
@@ -331,33 +331,3 @@ button .txt-md img:hover{
         max-width: 1170px;
         }
 } */
-@media (max-width: 1920px){
-    .container{
-        margin: auto;
-        max-width: 1170px;
-    }
-}
-@media (max-width:991px){
-    .counter h3{
-        font-size: ;
-    }
-}
-@media (max-width: 767px){
-    .contact-us .input-box{
-        justify-content: center;
-    }
-    .m-top{
-        margin-top:50px;
-    }
-    .padding-y{
-        padding: 50px 0;
-    }
-    .counter.py-3{
-        padding: 0;
-    }
-    .counter .counter-1 {
-        margin: 0;
-        padding: 34px 0;
-        border-bottom: 2px solid lightgray;
-    }
-}

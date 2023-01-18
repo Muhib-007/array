@@ -1,0 +1,42 @@
+/* Webpixels CSS */
+/* Utility and component-centric Design System based on Bootstrap for fast, responsive UI development */
+/* URL: https://github.com/webpixels/css */
+
+@import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);
+
+
+.liniar{
+    background: linear-gradient(180deg, rgba(62, 64, 177, 0.55) 0%, rgba(2, 3, 62, 0.92) 100%);
+}
+.liniar-2{
+    background: linear-gradient(180deg, #2E3092 1.24%, rgba(69, 71, 153, 0.917923) 22.85%, rgba(110, 112, 193, 0.67) 100%);
+}
+.hero-height{
+    height: 450px;
+}
+.s-testimonial{
+    padding: 100px 0;
+}
+.owl-carousel{
+    padding: 60px 0;
+}
+footer{
+    padding: 50px 0;
+}
+.pr
+.work-process-width{
+    max-width: 850px;
+}
+.mt-100px{
+    margin-top: 100px;
+}
+.working .content-box{
+    /* max-width: 270px; */
+    min-height: 270px;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+}
