@@ -16,6 +16,11 @@ section {
     overflow-x: hidden;
 }
 
+/* .navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+    padding: 0;
+} */
 
 /* shapes  */
 .shapes-hero-one {
@@ -269,15 +274,22 @@ width: 250px;
 }
 
 /* .projects .box-content  */
+.projects ul a:hover{
+    color: var(--orange);
+}
+.projects .nav-tabs .nav-link:hover{
+    border-color: transparent;
+}
 .projects .one{
     padding: 0 3px;
     gap: 6px;
     line-height: 17px;
 }
+
 .border-bottom{
     border-bottom: none;
 }
-.nav-link:hover{
+.nav-link a:hover{
     border: none;
     color: var(--orange);
     /* border-bottom: 1px solid orange; */

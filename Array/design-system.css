@@ -232,12 +232,17 @@ ul, li, a{
 li{
     list-style-type: none;
 }
-nav,a{
+nav a{
     color: var(--deep-blue);
     font-size: var(--text-md);
-    margin-right: 32px;
+    margin: 0 16px;
     font-weight: 500;
 }
+nav ul a:hover::before{
+    content: url(./image/Line.svg);
+    margin-left: -25px;
+}
+
 html{
     font-family: 'Poppins', sans-serif;
     line-height: 1.15;

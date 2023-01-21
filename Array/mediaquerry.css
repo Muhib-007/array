@@ -8,14 +8,17 @@
 
 @media (max-width:1098px){
     .hero-heading h1{
-        font-size: min(max(2rem, 4vw), 3rem);;
-
+        font-size: min(max(2rem, 4vw), 3rem);
     }
+    .map{
+        margin-top: 65px;
+    }
+
 }
 @media (max-width:991px){
-    .counter h3{
+    /* .counter h3{
         font-size:  ;
-    }
+    } */
     .testimonial .title{
         max-width: 450px;
     }
