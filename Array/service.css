@@ -19,14 +19,24 @@
 .hero{
     margin-top: -74px;
 }
-
 .hero h1{
-    font-size: 72px;
-
+    font-size: min(max(2.5rem, 5.5vw), 4.5rem);
 }
 .mt-50{
     margin-top: 50px;
 }
+.second-nav{
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
+/* service css start  */
+
+/* service css end  */
+
+
+
+
+
 .working .counter .content-box{
     position: relative;
     padding-top: 24px;  
@@ -53,8 +63,9 @@ top: -4px;
 
 
 /* testimonial css start  */
-.s-testimonial .pt80{
+.service-testimonial .s-testimonial{
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .owl-carousel{

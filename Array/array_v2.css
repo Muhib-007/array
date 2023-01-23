@@ -1,0 +1,19 @@
+@import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);
+
+
+.liniar{
+    background: linear-gradient(180deg, rgba(62, 64, 177, 0.55) 0%, rgba(2, 3, 62, 0.92) 100%);
+}
+.liniar-2{
+    background: linear-gradient(180deg, #2E3092 1.24%, rgba(69, 71, 153, 0.917923) 22.85%, rgba(110, 112, 193, 0.67) 100%);
+}
+.hero .hero-height{
+    height: 650px;
+}
+.a2-btn{
+    margin: 40px 0;
+}
+.why-shape{
+    bottom: 0;
+    font-size: 52px; 
+}
