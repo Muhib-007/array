@@ -72,7 +72,7 @@ section {
     transform: translateX(-250px);
 }
 .shape-testimonial-lt{
-    top: -50;
+    top: -50px;
     transform: translateX(-300px);
 }
 .shape-testimonial-bt{
@@ -109,10 +109,14 @@ section {
     left: 0;
     width: 100%;
 }
+/* nav css start  */
 
+.number-busy button:hover{
+    color: var(--secondary);
+}
+/* nav css end  */
 .image{
     width: 100%;
-    background: cover;
 }
 .service-box{
     max-width: 370px;
@@ -169,7 +173,6 @@ section {
     }
 }
 .slider {
-    background: pr;
     box-shadow: 0 13px 26px -11px rgb(0 0 0 / 11%);
     height: 71px;
     margin: auto;
@@ -274,7 +277,7 @@ width: 250px;
 }
 
 /* .projects .box-content  */
-.projects ul a:hover{
+.projects ul li a:hover{
     color: var(--orange);
 }
 .projects .nav-tabs .nav-link:hover{
@@ -289,11 +292,7 @@ width: 250px;
 .border-bottom{
     border-bottom: none;
 }
-.nav-link a:hover{
-    border: none;
-    color: var(--orange);
-    /* border-bottom: 1px solid orange; */
-}
+
 
 /* testimonial css  */
 

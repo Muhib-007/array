@@ -76,7 +76,7 @@ top: -4px;
     padding:0;
 }
 .owl-carousel .item{
-    max-width: 370px;
+    /* max-width: 370px; */
     border-radius: 5px;
 }
 .dp{
