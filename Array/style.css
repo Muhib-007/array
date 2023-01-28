@@ -15,7 +15,12 @@ body{
 section {
     overflow-x: hidden;
 }
-
+.hero{
+    position: fixed;
+    color: aliceblue;
+    z-index: 99999;
+    width: 100%;
+}
 /* .navbar-expand-lg .navbar-nav .nav-link {
     margin-right: 1.25rem;
     margin-left: 1.25rem;
@@ -41,7 +46,6 @@ section {
     bottom: -6px;
     left: 26px;
 }
-
 .shape-position{
     left: 0;
     bottom: -22px;
@@ -71,9 +75,12 @@ section {
     top: 0;
     transform: translateX(-250px);
 }
-.shape-testimonial-lt{
-    top: -50px;
-    transform: translateX(-300px);
+.testimonial-bg{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    /* transform: translateX(-300px); */
 }
 .shape-testimonial-bt{
     bottom: 0;
@@ -83,14 +90,6 @@ section {
     bottom: -100px;
     right: -200px;
 } */
-.shape-footer{
-    left: -15vw;
-    top: 1vw;
-}
-.shape-footer-r{
-    right: -15vw;
-    bottom: -2vw;
-}
 .shape-contact{
     bottom: 27%;
     left: -28%;
@@ -109,8 +108,12 @@ section {
     left: 0;
     width: 100%;
 }
+.footer-bg{
+    top: 0;
+    left: 0;
+    right: 0;
+}
 /* nav css start  */
-
 .number-busy button:hover{
     color: var(--secondary);
 }
@@ -130,28 +133,18 @@ section {
 .service-box .inner-content h4{
     margin: 32px 0;
 }
-
 /* hero section  */
 .hero-heading{
     max-width: 544px;
 }
-
-
 .testimonial .title{
     max-width: 650px;
 }
-
-
-
-
 /* brand css starts here  */
-
 .brand .br-names{
     margin: 84px 0;
 }
-
     /* slider css  */
-
 @-webkit-keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
@@ -209,9 +202,6 @@ width: calc(250px * 14);
 height: 100px;
 width: 250px;
 }
-      
-
-
 /* service css  */
 .service{
     padding-bottom: 9px;
@@ -221,11 +211,9 @@ width: 250px;
     padding-bottom: 67px;
 }
 .service .container .service-box{
-    margin: 64px auto;
+    margin-top: 100px;
 }
-
 /* why us section css  */
-
 .why-us .container .image .image-left{
     max-width: 470px;
     width: 100%;
@@ -240,33 +228,24 @@ width: 250px;
     /* Background Colors/BG-blusih(200) */
     border-radius: 5px;
 }
-
 .container .box-content .box-bg image{
     display: block;
 }
-
 .container .box-content .box-bg .img-1{
     position: absolute;
     bottom: 0;
     right: 0;
 }
-
 .container .box-content .box-bg .img-2{
     position: absolute;
     bottom: 24px;
     right: 24px;
 }
-
-
-
 /* counter css  */
 .counter .counter-1{
     margin: 151px 0;
 }
-
-
 /* <!-- project-value  -->  */
-
 .my-66px{
     margin: 66px 0;
 }
@@ -288,20 +267,11 @@ width: 250px;
     gap: 6px;
     line-height: 17px;
 }
-
 .border-bottom{
     border-bottom: none;
 }
-
-
 /* testimonial css  */
-
-.my-60px{
-    margin: 60px 0;
-}
-
 .animateToLeft {
-
     animation: slideToLeft 5s infinite;
     animation-timing-function: linear;
     width: 200% !important;
@@ -318,22 +288,15 @@ width: 250px;
 .owl-carousel .owl-item img{
     width: auto;
 }
-
 .no-outline:focus {
     outline: none;
   }
-
 /* animation */
-
 @keyframes slideToLeft {
     0%   {transform: translate( 0%, 0px);}
     99%   {transform: translate( -50%, 0px);}
     99.1%   {transform: translate( 0%, 0px);}
   }
-
-
-
-
 .home-demo .item {
     background: #ff3f4d;
 }
@@ -343,6 +306,4 @@ width: 250px;
     margin: 0;
     font-weight: 300;
 }
-
 /* footer  */
-
