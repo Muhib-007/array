@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-
+@import url(./design-system.css);
 body{
     background-color: var(--bg-light-white);
     font-family: 'Poppins', sans-serif;
@@ -11,11 +10,10 @@ body{
     width: 400px;
 
 } */
-
 section {
     overflow-x: hidden;
 }
-.hero{
+.top-nav{
     position: fixed;
     color: aliceblue;
     z-index: 99999;
@@ -28,20 +26,14 @@ section {
 } */
 
 /* shapes  */
-.shapes-hero-one {
-    position: absolute;
-    transform: translate(-238px, 10px);
-}
-.shapes-hero-two {
-    position: absolute;
-    left: 45%;
-    top: 13%;
+.hero .hero-bg-shapes {
+    left: -295px;
+    top: -34px;
 }
 .shape-line{
     max-width: 231px;
     width: 100%;
 }
-
 .ground-shape{
     bottom: -6px;
     left: 26px;
@@ -59,13 +51,11 @@ section {
     right: 10px;
     width: 80%;
 }
-.s-service-left{
-    top: 0;
-    left: -220px;
-}
-.s-service-right{
-    bottom: 0;
-    right: 100px;
+.service{
+    background-image: url(./image/service-bg-shapes.png);
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .shape-why-us {
     bottom: 0;
@@ -75,16 +65,12 @@ section {
     top: 0;
     transform: translateX(-250px);
 }
-.testimonial-bg{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 10px;
+.testimonial{
+    background: url(./image/testimonial-bg-shapes.png);
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     /* transform: translateX(-300px); */
-}
-.shape-testimonial-bt{
-    bottom: 0;
-    left: -200px;
 }
 /* .shape-testimonial-right{
     bottom: -100px;
@@ -108,10 +94,10 @@ section {
     left: 0;
     width: 100%;
 }
-.footer-bg{
-    top: 0;
-    left: 0;
-    right: 0;
+footer{
+    background-image: url(./image//footer-bg-shapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 /* nav css start  */
 .number-busy button:hover{
