@@ -108,13 +108,23 @@ footer{
     width: 100%;
 }
 .service-box{
-    max-width: 370px;
-    width: 100%;
+    /* min-width: 370px; */
+    /* margin: 20px; */
+    /* width: 100%; */
     padding:0px 35px 30px 23px;
     border-radius: 5px;
 }
-.service-box .inner-content img{
-    margin-top: -68px;
+.our-service{
+    position: relative;
+}
+.service-box:hover{
+    background-color: var(--primary) ;
+    color: #FFFFFF;
+}
+.service-box .inner-content img {
+    transform: translate(0, 27px);
+    position: absolute;
+    top: 0;
 }
 .service-box .inner-content h4{
     margin: 32px 0;
@@ -153,11 +163,12 @@ footer{
 }
 .slider {
     box-shadow: 0 13px 26px -11px rgb(0 0 0 / 11%);
-    height: 71px;
     margin: auto;
     overflow: hidden;
     position: relative;
     width: 100%;
+    background: transparent;
+    margin-bottom: 100px;
 }
 .slider::before,
 .slider::after {
@@ -185,8 +196,7 @@ display: flex;
 width: calc(250px * 14);
 }
 .slider .slide {
-height: 100px;
-width: 250px;
+    padding: 25px 45px;
 }
 /* service css  */
 .service{

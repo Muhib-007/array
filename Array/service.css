@@ -48,8 +48,8 @@
     margin-top: 50px;
 }
 .second-nav{
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 /* service css start  */
 
@@ -83,6 +83,16 @@ top: -6px;
 .ux-ui .one span{
     margin:5px;
     line-height: 1;
+}
+.recent-project-txt-content{
+    max-width: 548px;
+    padding: 0;
+    margin: 0;
+}
+.recent-project-slider{
+    max-width: 570px;
+    padding: 0;
+    margin: 0;
 }
 /* recent project css end   */
 
