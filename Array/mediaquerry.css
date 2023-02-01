@@ -37,10 +37,11 @@
         justify-content: center;
     }
     .m-top{
-        margin-top:50px;
+        margin-top:60px;
     }
-    .padding-y{
-        padding: 50px 0;
+    .py-100{
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     .counter.py-3{
         padding: 0;

@@ -117,10 +117,7 @@ footer{
 .our-service{
     position: relative;
 }
-.service-box:hover{
-    background-color: var(--primary) ;
-    color: #FFFFFF;
-}
+
 .service-box .inner-content img {
     transform: translate(0, 27px);
     position: absolute;
@@ -136,6 +133,7 @@ footer{
 .testimonial .title{
     max-width: 650px;
 }
+/* brand css starts here  */
 /* brand css starts here  */
 .brand .br-names{
     margin: 84px 0;
@@ -198,7 +196,10 @@ width: calc(250px * 14);
 .slider .slide {
     padding: 25px 45px;
 }
-/* service css  */
+/* brand css ends here  */
+/* brand css ends here  */
+
+/* service css start */
 .service{
     padding-bottom: 9px;
 }
@@ -209,23 +210,21 @@ width: calc(250px * 14);
 .service .container .service-box{
     margin-top: 100px;
 }
+/* service css end  */
+
 /* why us section css  */
 .why-us .container .image .image-left{
     max-width: 470px;
     width: 100%;
 }
-/* .mt-91px{
-    margin-top: 91px;
-} */
 .container .box-content .box-bg{
     box-sizing: border-box;
-    /* position: absolute; */
-    min-height: 265.5px;
-    /* Background Colors/BG-blusih(200) */
     border-radius: 5px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
 }
 .container .box-content .box-bg image{
     display: block;
+
 }
 .container .box-content .box-bg .img-1{
     position: absolute;
@@ -240,7 +239,8 @@ width: calc(250px * 14);
 /* counter css  */
 .counter .counter-1{
     margin: 151px 0;
-}
+}   
+        /* projects css starts here  */
 /* <!-- project-value  -->  */
 .my-66px{
     margin: 66px 0;
@@ -263,9 +263,12 @@ width: calc(250px * 14);
     gap: 6px;
     line-height: 17px;
 }
-.border-bottom{
+.projects .nav-tabs{
     border-bottom: none;
 }
+        /* projects css starts here  */
+
+
 /* testimonial css  */
 .animateToLeft {
     animation: slideToLeft 5s infinite;
@@ -302,4 +305,24 @@ width: calc(250px * 14);
     margin: 0;
     font-weight: 300;
 }
-/* footer  */
+
+/* footer css */
+
+.footer-padding{
+    padding-top: 66px ;
+    padding-bottom: 66px ;
+}
+footer .footer-links li{
+    padding-top: 8px
+}
+/* footer p{
+    padding-top: 36px ;
+    padding-bottom: 36px ;
+} */
+/* .footer-bg-shapes{
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    transform: translate( 10px, 10px);
+} */

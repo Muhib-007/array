@@ -28,5 +28,5 @@ $(document).ready(function(){
         });
     });
 });
-onclick = 
-            "alert('Welcome to GeeksforGeeks')"
+// onclick = 
+//             "alert('Welcome to GeeksforGeeks')"

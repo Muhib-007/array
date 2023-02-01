@@ -34,9 +34,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
 /* background shaps endss here  */
-
 .hero-height{
     height: 450px;
     padding-top: 100px;
@@ -46,10 +44,6 @@
 }
 .mt-50{
     margin-top: 50px;
-}
-.second-nav{
-    padding-top: 35px;
-    padding-bottom: 35px;
 }
 /* service css start  */
 
@@ -96,20 +90,13 @@ top: -6px;
 }
 /* recent project css end   */
 
-
 /* testimonial css start  */
-
 .service-testimonial .line-text .line{
     top: 60px;
     left: 0;
 }
 .service-testimonial .line-text{
     white-space: nowrap;
-}
-
-.service-testimonial .s-testimonial{
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
 .owl-carousel{
     padding: 60px 0;
@@ -153,10 +140,7 @@ top: -6px;
 footer h6{
     color: var(--secondary);
 }
-.service-footer{
-    padding-top: 66px ;
-    padding-bottom: 66px ;
-}
+
 
 @media (max-width:991px){
     .navbar{

@@ -17,10 +17,35 @@
     bottom: 0;
     font-size: 52px; 
 }
-
+.top-nav {
+    background-color: #8585bb;
+}
 .service{
     background-image: url(./image/array_v2/v2-service-bg.png);
     background-repeat: no-repeat;
     background-position: center 30px;
+}
 
+/* brand css starts here  */
+.brand .slider {
+    box-shadow: 0 0 0 0 rgb(0 0 0 / 11%);
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    margin-bottom: 100px;
+}
+.brand .slider::before,
+.brand .slider::after {
+background: var(--bg-light-white2);
+content: "";
+height: 100px;
+position: absolute;
+width: 200px;
+z-index: 2;
+}
+
+.projects .nav-tabs{
+    border-bottom: none;
 }
