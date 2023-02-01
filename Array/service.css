@@ -1,0 +1,194 @@
+/* Webpixels CSS */
+/* Utility and component-centric Design System based on Bootstrap for fast, responsive UI development */
+/* URL: https://github.com/webpixels/css */
+
+@import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);
+@import url(./style.css);
+.top-nav{
+    background-color: #7b7bb7;
+}
+.top-nav .nav-item:hover{
+    color: var(--secondary);
+}
+.liniar{
+    background: linear-gradient(180deg, rgba(62, 64, 177, 0.55) 0%, rgba(2, 3, 62, 0.92) 100%);
+}
+.liniar-2{
+    background: linear-gradient(180deg, #2E3092 1.24%, rgba(69, 71, 153, 0.917923) 22.85%, rgba(110, 112, 193, 0.67) 100%);
+}
+/* background shaps starts here  */
+.working-process{
+    background-image: url(./image/service/work-process-bg-shapes.png);
+    background: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.recent-project{
+    background-image: url(./image/service/recent-project-bg-shapes.png);
+    background-position: center 100px;
+    background-repeat: no-repeat;
+    background: cover;
+}
+.service-testimonial{
+    background-image: url(./image/service/testimonial-bg-shapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* background shaps endss here  */
+.hero-height{
+    height: 450px;
+    padding-top: 100px;
+}
+.hero h1{
+    font-size: min(max(2.5rem, 5.5vw), 4.5rem);
+}
+.mt-50{
+    margin-top: 50px;
+}
+/* service css start  */
+
+/* service css end  */
+.working-process .line-text .line{
+    top: 70px;
+    left: 0;
+}
+.working-process .counter .content-box{
+    position: relative;
+    padding-top: 24px;  
+}
+.working-process .counter .count{
+position: absolute;
+left: 0;
+top: 0;
+}
+.working-process .counter .number{
+position: absolute;
+left: -5px;
+top: -6px;
+}
+.content-box-text{
+    margin-top: 80px;
+}
+/* recent project css start  */
+.recent-project .line-text .line{
+    top: 60px;
+    left: 0;
+}
+.ux-ui .one span{
+    margin:5px;
+    line-height: 1;
+}
+.recent-project-txt-content{
+    max-width: 548px;
+    padding: 0;
+    margin: 0;
+}
+.recent-project-slider{
+    max-width: 570px;
+    padding: 0;
+    margin: 0;
+}
+/* recent project css end   */
+
+/* testimonial css start  */
+.service-testimonial .line-text .line{
+    top: 60px;
+    left: 0;
+}
+.service-testimonial .line-text{
+    white-space: nowrap;
+}
+.owl-carousel{
+    padding: 60px 0;
+    width: 100%;
+}
+.owl-carousel .owl-stage-outer{
+    padding:0;
+}
+.owl-carousel .item{
+    /* max-width: 370px; */
+    border-radius: 5px;
+}
+.dp{
+    height: 64px;
+    max-width: 64px;
+}
+/* testimonial css end  */
+.pr
+.work-process-width{
+    max-width: 850px;
+}
+.working .content-box{
+    /* max-width: 270px; */
+    min-height: 270px;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+}
+/* shapes css   */
+.left-top-shape{
+    left: -65%;
+}
+.sec-3-left-shape{
+    transform: translate(-300px , -174px);
+    /* right: -23%;
+    bottom: -15%; */
+}
+footer h6{
+    color: var(--secondary);
+}
+
+
+@media (max-width:991px){
+    .navbar{
+        padding: 0;
+    }
+    .working-process .line-text .line{
+        top: 61px;
+        left: 0;
+    }
+    .recent-project .line-text .line{
+        top: 47px;
+        left: 0;
+    }
+    .service-testimonial .line-text .line{
+        top: 47px;
+        left: 0;
+    }
+}
+@media (max-width:811px){
+    .py-100{
+        padding-top: 60px ;
+        padding-bottom: 60px ;
+    }
+    .working-process .line-text .line{
+        top: 51px;
+        left: 0;
+    }
+    .recent-project .line-text .line{
+        top: 47px;
+        left: 0;
+    }
+    .service-testimonial .line-text .line{
+        top: 47px;
+        left: 0;
+    }
+}
+@media (max-width: 667px){
+    
+    .working-process .line-text .line{
+        top: 41px;
+        left: 0;
+    }
+    .recent-project .line-text .line{
+        top: 39px;
+        left: 0;
+    }
+    .service-testimonial .line-text .line{
+        top: 39px;
+        left: 0;
+    }
+}

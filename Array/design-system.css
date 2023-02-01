@@ -24,9 +24,12 @@
     --light-green:#6E9363;
     --icon-green:#6FA55F;
 
-    --h1:3.25rem;
-    --h2:2.25rem;
-    --h3:2rem;
+    --h1:min(max(2rem, 5vw), 3.25rem);
+    --font-size: min(max(2rem, 5vw), 3.25rem);
+    /* --h2:2.25rem; */
+    --h2:min(max(1.75rem, 4vw), 2.25rem);
+    --h3:min(max(1.5rem, 3vw), 2rem);
+    /* --font-size: min(max(1.5rem, 4vw), 2rem); */
     --h4:1.5rem;
     --h5:1.375rem;
     --h6:1.25rem;
@@ -44,9 +47,6 @@
 }
 .vh{
     min-height: 5vw;
-}
-.padding-y{
-    padding: 100px 0;
 }
 .primary{
     color: var(--primary);
@@ -136,9 +136,7 @@
 .icon-green{
     color: var(--icon-green);
 }
-
 /* button color  */
-
 .primary-btn{
     background-color: var(--secondary);
     color: var(--white);
@@ -166,6 +164,10 @@
 .m-top{
     margin-top: 100px ;
 }
+.py-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 h1{
     font-size: var(--h1);
     font-weight: 600;
@@ -174,6 +176,7 @@ h1{
     font-size: var(--h1);
     font-weight: 600;
 }
+
 h2{
     font-size: var(--h2);
     font-weight: 600;
@@ -200,8 +203,8 @@ h4{
 }
 h5{
     font-size: var(--h5);
-.}
-h5{
+}
+.h5{
     font-size: var(--h5);
 }
 h6{
@@ -210,6 +213,7 @@ h6{
 }
 .h6{
     font-size: var(--h6);
+    font-weight: 600;
 }
 .txt-md{
     font-size: var(--text-md);
@@ -220,6 +224,12 @@ h6{
     font-size: var(--text-sm);
     line-height: 28px;
 }
+.navbar-nav .nav-link {
+    font-size: var(--text-md);
+    color: var(--deep-blue);
+    margin: 0 16px;
+    font-weight: 500;
+}
 ul, li, a{
     text-decoration: none;
     margin: 0;
@@ -227,11 +237,9 @@ ul, li, a{
 li{
     list-style-type: none;
 }
-nav a{
-    color: var(--deep-blue);
-    font-size: var(--text-md);
-    margin-right: 32px;
-    font-weight: 500;
+.navbar-nav .nav-link:hover::before{
+    content: url(./image/Line.svg);
+    margin-left: -25px;
 }
 html{
     font-family: 'Poppins', sans-serif;
@@ -250,8 +258,6 @@ body{
     text-align: left;
     background-color: var(--bg-light-white);
 }
-
-
 button{
     border: none;
     padding: 16px;
@@ -270,28 +276,22 @@ button .txt-md img:hover{
     color: var(--secondary);
 }
 
-
-
+.navbar-nav a:hover{
+    border: none;
+    color: var(--orange);
+    /* border-bottom: 1px solid orange; */
+}
 .big-shape{
-    max-width: 836px;
-    height: 770px;
+    max-width: 736px;
 }
 .big-shape img{
     width: 100%;
 }
-
-
-
 /* why us  */
-
 .box-padding{
     padding: 24px 24px 0 24px;
     position: relative;
-
 }
-
-
-
 /* contact us  */
 .contact-us .input-box {
     max-width: 470px;
@@ -320,24 +320,17 @@ button .txt-md img:hover{
 .map{
     margin-top: -65px;
 }
+footer a:hover{
+    color: var(--secondary);
 
-
-
-
-
+}
+/* testimonial  */
+.dp{
+    width: 60px;
+    height: 60px;
+}
 /* @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1170px;
         }
 } */
-@media (max-width: 1920px){
-    .container{
-        margin: auto;
-        max-width: 1170px;
-    }
-}
-@media (max-width: 768px){
-    .contact-us .input-box{
-        justify-content: center;
-    }
-}

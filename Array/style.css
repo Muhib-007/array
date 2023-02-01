@@ -1,74 +1,230 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-
+@import url(./design-system.css);
 body{
     background-color: var(--bg-light-white);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
-
-
 /* .bg-dark{
     height: 400px;
     width: 400px;
 
 } */
+section {
+    overflow-x: hidden;
+}
+.top-nav{
+    position: fixed;
+    color: aliceblue;
+    z-index: 99999;
+    width: 100%;
+}
+/* .navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+    padding: 0;
+} */
+
+/* shapes  */
+.hero .hero-bg-shapes {
+    left: -295px;
+    top: -34px;
+}
+.shape-line{
+    max-width: 231px;
+    width: 100%;
+}
+.ground-shape{
+    bottom: -6px;
+    left: 26px;
+}
+.shape-position{
+    left: 0;
+    bottom: -22px;
+}
+.why-us-shape{
+    bottom: -24px;
+    right: 12px;
+}
+.shape-choose {
+    bottom: -30px;
+    right: 10px;
+    width: 80%;
+}
+.service{
+    background-image: url(./image/service-bg-shapes.png);
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.shape-why-us {
+    bottom: 0;
+    transform: translateX(300px);
+}
+.shape-project{
+    top: 0;
+    transform: translateX(-250px);
+}
+.testimonial{
+    background: url(./image/testimonial-bg-shapes.png);
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* transform: translateX(-300px); */
+}
+/* .shape-testimonial-right{
+    bottom: -100px;
+    right: -200px;
+} */
+.shape-contact{
+    bottom: 27%;
+    left: -28%;
+    max-width: 6vw;
+}
+.shape-contact{
+    max-width: 29vw;
+}
+.shape-product {
+    bottom: -27px;
+    left: 6px;
+    width: 100%;
+}
+.shape-today {
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+}
+footer{
+    background-image: url(./image//footer-bg-shapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* nav css start  */
+.number-busy button:hover{
+    color: var(--secondary);
+}
+/* nav css end  */
 .image{
     width: 100%;
-    background: cover;
 }
 .service-box{
-    max-width: 370px;
-    max-height: 358px;
-    width: 100%;
+    /* min-width: 370px; */
+    /* margin: 20px; */
+    /* width: 100%; */
     padding:0px 35px 30px 23px;
     border-radius: 5px;
 }
-.service-box .inner-content img{
-    margin-top: -68px;
+.our-service{
+    position: relative;
+}
+
+.service-box .inner-content img {
+    transform: translate(0, 27px);
+    position: absolute;
+    top: 0;
 }
 .service-box .inner-content h4{
     margin: 32px 0;
 }
-
-/* brand css starts here  */
-
-.brand .br-names{
-    margin: 85px 0;
+/* hero section  */
+.hero-heading{
+    max-width: 544px;
 }
+.testimonial .title{
+    max-width: 650px;
+}
+/* brand css starts here  */
+/* brand css starts here  */
+.brand .br-names{
+    margin: 84px 0;
+}
+    /* slider css  */
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+    }
+    @keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.slider {
+    box-shadow: 0 13px 26px -11px rgb(0 0 0 / 11%);
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    margin-bottom: 100px;
+}
+.slider::before,
+.slider::after {
+background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+content: "";
+height: 100px;
+position: absolute;
+width: 200px;
+z-index: 2;
+}
+.slider::after {
+right: 0;
+top: 0;
+-webkit-transform: rotateZ(180deg);
+transform: rotateZ(180deg);
+}
+.slider::before {
+left: 0;
+top: 0;
+}
+.slider .slide-track {
+-webkit-animation: scroll 40s linear infinite;
+animation: scroll 40s linear infinite;
+display: flex;
+width: calc(250px * 14);
+}
+.slider .slide {
+    padding: 25px 45px;
+}
+/* brand css ends here  */
+/* brand css ends here  */
 
-
-/* service css  */
+/* service css start */
 .service{
     padding-bottom: 9px;
 }
 .service .container{
-    padding: 67px 0;
+    padding-top: 67px;
+    padding-bottom: 67px;
 }
 .service .container .service-box{
-    margin: 64px auto;
+    margin-top: 100px;
 }
+/* service css end  */
 
 /* why us section css  */
-
 .why-us .container .image .image-left{
     max-width: 470px;
     width: 100%;
-
-}
-.mt-91px{
-    margin-top: 91px;
 }
 .container .box-content .box-bg{
     box-sizing: border-box;
-    /* position: absolute; */
-    height: 265.5px;
-
-    /* Background Colors/BG-blusih(200) */
     border-radius: 5px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
 }
 .container .box-content .box-bg image{
     display: block;
+
 }
 .container .box-content .box-bg .img-1{
     position: absolute;
@@ -80,24 +236,12 @@ body{
     bottom: 24px;
     right: 24px;
 }
-
-
-
-
-
-
-
-
-
 /* counter css  */
 .counter .counter-1{
     margin: 151px 0;
-}
-
-
-
+}   
+        /* projects css starts here  */
 /* <!-- project-value  -->  */
-
 .my-66px{
     margin: 66px 0;
 }
@@ -107,23 +251,78 @@ body{
     width: 100%;
 }
 
-.projects .box-content 
-
-.border-bottom{
+/* .projects .box-content  */
+.projects ul li a:hover{
+    color: var(--orange);
+}
+.projects .nav-tabs .nav-link:hover{
+    border-color: transparent;
+}
+.projects .one{
+    padding: 0 3px;
+    gap: 6px;
+    line-height: 17px;
+}
+.projects .nav-tabs{
     border-bottom: none;
 }
-.nav-link:hover{
-    border: none;
-    color: var(--orange);
-    border-bottom: 2px solid orange;
-}
+        /* projects css starts here  */
+
 
 /* testimonial css  */
-
-.my-60px{
-    margin: 60px 0;
+.animateToLeft {
+    animation: slideToLeft 5s infinite;
+    animation-timing-function: linear;
+    width: 200% !important;
+    max-width: 200%;
+}
+    /* testtimonial carousel  */
+.owl-carousel{
+    display: flex;
+}
+/* .owl-carousel .owl-dots.disabled{
+    display: block;
+    color: var(--orange);
+} */
+.owl-carousel .owl-item img{
+    width: auto;
+}
+.no-outline:focus {
+    outline: none;
+  }
+/* animation */
+@keyframes slideToLeft {
+    0%   {transform: translate( 0%, 0px);}
+    99%   {transform: translate( -50%, 0px);}
+    99.1%   {transform: translate( 0%, 0px);}
+  }
+.home-demo .item {
+    background: #ff3f4d;
+}
+.home-demo h2 {
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    font-weight: 300;
 }
 
+/* footer css */
 
-
-/* footer  */
+.footer-padding{
+    padding-top: 66px ;
+    padding-bottom: 66px ;
+}
+footer .footer-links li{
+    padding-top: 8px
+}
+/* footer p{
+    padding-top: 36px ;
+    padding-bottom: 36px ;
+} */
+/* .footer-bg-shapes{
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    transform: translate( 10px, 10px);
+} */
